@@ -78,7 +78,11 @@ export async function LogIn(request: HttpRequest, context: InvocationContext): P
                 }
 
             } catch (error) {
-                return error
+                const errorResponse: HttpResponseInit = {
+                    status: 500,
+                    body: "Internal Server Error",
+                };
+                return errorResponse;
             } finally {
                 postgresConnection.disconnect();
             }
