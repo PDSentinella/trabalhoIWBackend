@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
+    "azure-functions-core-tools": "^4.0.5455",
     "bcrypt": "^5.1.1",
     "debug": "^4.3.1",
     "pg": "^8.11.3",
